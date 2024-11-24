@@ -14,7 +14,7 @@
 
 @media (max-width: 768px) {
     .super-navbar__content, .super-footer {
-        padding: 10px; /* 모바일에서는 패딩 축소 */
+        padding: 10px;
     }
 }
 
@@ -120,10 +120,6 @@
   .notion-header__cover::after {
     content: none;
     background: none;
-  }
-  
-  .notion-page__properties-layout {
-    display: none !important;
   }
 }
 
