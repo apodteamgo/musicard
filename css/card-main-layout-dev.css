@@ -348,3 +348,33 @@ h1 {
     box-sizing: border-box !important;
   }
 }
+
+.notion-property.notion-property__file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* 부모 요소 안에서 크기 제한 */
+  margin: 0 auto;
+}
+
+.notion-property.notion-property__file img {
+  object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
+  width: 100%;
+  height: auto; /* 세로 비율 유지 */
+  max-width: 100%; /* 부모 크기에 맞춤 */
+  display: block; /* 상하 여백 제거 */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .notion-property.notion-property__file {
+    padding: 10px; /* 모바일에서 컨테이너 간격 추가 */
+  }
+
+  .notion-property.notion-property__file img {
+    max-height: 300px; /* 너무 커지지 않도록 제한 */
+    object-fit: contain; /* 이미지가 잘리지 않도록 설정 */
+  }
+}
+
