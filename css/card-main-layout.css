@@ -18,12 +18,6 @@
     }
 }
 
-@media (max-width: 1020px) {
-  .super-content {
-    padding: 0px !important;
-  }
-}
-
 .notion-header {
   position: fixed !important;
   height: 100vh !important;
