@@ -81,6 +81,10 @@
   .notion-header__title {
     display: none;
   }
+
+  .notion-page__properties.middle {
+      display: none;
+  }
   
   .notion-image,
   .notion-link {
