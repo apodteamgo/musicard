@@ -194,6 +194,10 @@ h1 {
     height: 100% !important;
 }
 
+.notion-property__title__icon-wrapper {
+    display: none !important;
+}
+
 .notion-collection-card.gallery .notion-property__title {
     position: absolute !important;
     padding: 24px 30px !important;
