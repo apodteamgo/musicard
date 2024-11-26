@@ -24,52 +24,6 @@
   }
 }
 
-@media (max-width: 768px) and (orientation: landscape) and (max-height: 480px) {
-  /* 핸드폰을 가로로 돌렸을 때 웹과 동일한 레이아웃 설정 */
-  .super-footer {
-    display: none !important;
-  }
-
-  .notion-collection-gallery {
-    position: fixed !important;
-    height: 100% !important;
-    width: 47.5vw !important;
-    left: 0 !important;
-    top: 0 !important;
-    margin: 0 !important;
-  }
-
-  .super-content {
-    margin-left: 50vw !important;
-    width: 50vw !important;
-  }
-
-  .notion-root {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-
-  .notion-page__properties.middle {
-    display: none !important;
-  }
-
-  .notion-collection-card.gallery .notion-property__title {
-    opacity: 0;
-  }
-
-  .notion-collection-card.gallery:hover .notion-property__title {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .notion-image,
-  .notion-link {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
 .notion-header {
   position: fixed !important;
   height: 100vh !important;
