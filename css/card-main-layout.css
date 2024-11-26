@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
+@media (max-height: 768px) {
   /* 핸드폰을 가로로 돌렸을 때 웹과 동일한 레이아웃 설정 */
   .super-footer {
     display: none !important;
