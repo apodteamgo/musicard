@@ -369,11 +369,11 @@ h1 {
 
 @media (max-width: 768px) {
   .notion-property.notion-property__file {
-    padding: 10px; /* 모바일에서 컨테이너 간격 추가 */
+    padding: 0; /* 모바일에서 컨테이너 간격 추가 */
   }
 
   .notion-property.notion-property__file img {
-    max-height: 300px; /* 너무 커지지 않도록 제한 */
+    max-height: 0; /* 너무 커지지 않도록 제한 */
     object-fit: contain; /* 이미지가 잘리지 않도록 설정 */
   }
 }
