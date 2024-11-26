@@ -27,13 +27,7 @@
 @media (min-width: 768px) and (orientation: landscape) {
   /* 핸드폰을 가로로 돌렸을 때 웹과 동일한 레이아웃 설정 */
   .notion-header {
-    position: fixed !important;
-    height: 100vh !important;
-    width: 48.9vw !important;
-    top: 0 !important;
-    right: 0 !important;
-    margin: 0 !important;
-    z-index: 0;
+    display: none !important;
   }
 
   .notion-collection-gallery {
