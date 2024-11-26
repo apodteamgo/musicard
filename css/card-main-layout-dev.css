@@ -241,7 +241,6 @@ h1 {
   .notion-page__properties-layout {
     margin: 0 !important;
     padding: 0 !important;
-    box-sizing: border-box !important;
   }
 
   .notion-collection-gallery {
@@ -346,28 +345,5 @@ h1 {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
-  }
-}
-
-.notion-property.notion-property__file {
-  position: relative; /* 이미지 위치 설정 */
-  width: 100%; /* 부모 요소는 전체 너비 */
-  max-width: 100%; /* 부모 요소 너비 제한 */
-  height: auto; /* 기본 높이 설정 */
-  aspect-ratio: 16 / 9; /* 부모 요소 비율 유지 (16:9 비율로 설정) */
-}
-
-.notion-property.notion-property__file img {
-  position: absolute; /* 이미지 위치 고정 */
-  top: 0;
-  left: 0;
-  width: 100%; /* 부모 요소를 채움 */
-  height: 100%; /* 부모 요소를 채움 */
-  object-fit: cover; /* 비율 유지하며 부모 요소 채움 */
-}
-
-@media (max-width: 768px) {
-  .notion-property.notion-property__file {
-    aspect-ratio: 4 / 3; /* 모바일에서 적절한 비율 */
   }
 }
