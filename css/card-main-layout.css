@@ -19,43 +19,53 @@
 }
 
 @media (max-width: 1020px) {
-  .notion-header,
-  .super-content {
-    position: relative !important;
-    width: 100% !important;
-  }
-
-  .notion-header {
-    height: 420px !important;
-  }
-}
-
-@media (max-width: 1310px) {
-    .super-content {
-      padding: 60px !important;
-    }
-  }
-
-@media (max-width: 1020px) {
   .super-content {
     padding: 0px !important;
   }
 }
 
-@media (min-width: 1021px) {
-  .super-footer,
-  .super-navbar,
+@media (min-width: 768px) and (orientation: landscape) {
+  /* 핸드폰을 가로로 돌렸을 때 웹과 동일한 레이아웃 설정 */
+  .notion-header {
+    position: fixed !important;
+    height: 100vh !important;
+    width: 48.9vw !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    z-index: 0;
+  }
+
+  .notion-collection-gallery {
+    position: fixed !important;
+    height: 100% !important;
+    width: 47.5vw !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 !important;
+  }
+
   .super-content {
     margin-left: 50vw !important;
     width: 50vw !important;
-    position: static !important;
   }
-}
 
-@media (min-width: 1021px) {
   .notion-root {
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+
+  .notion-page__properties.middle {
+    display: none !important;
+  }
+
+  .notion-collection-card.gallery .notion-property__title {
+    opacity: 0;
+  }
+
+  .notion-collection-card.gallery:hover .notion-property__title {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
