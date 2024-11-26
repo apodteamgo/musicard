@@ -94,7 +94,7 @@ transform: rotate(360deg);
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 768px) {
   .cd-display {
     width: 100px;
     margin: 50px auto 0 auto;
@@ -109,23 +109,5 @@ transform: rotate(360deg);
   .play-pause-btn {
     width: 40px;
     height: 40px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
-  /* 가로 모드에서 크기 조정 */
-  .cd-display {
-    width: 100px; /* 디스플레이 크기 축소 */
-    max-width: none;
-  }
-
-  .center-label {
-    width: 30px; /* 센터 레이블 크기 축소 */
-    height: 30px;
-  }
-
-  .play-pause-btn {
-    width: 30px; /* 버튼 크기 축소 */
-    height: 30px;
   }
 }
