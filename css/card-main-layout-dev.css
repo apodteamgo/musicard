@@ -22,7 +22,7 @@
   position: static !important;
 }
 
-@media (max-width: 1024px) and (orientation: portrait) and (min-aspect-ratio: 3/4) {
+@media (max-width: 1024px) and (orientation: portrait) {
     .super-navbar__content, .super-footer {
         padding: 10px;
     }
@@ -46,7 +46,7 @@
   z-index: inherit;
 }
 
-@media (max-width: 1024px) and (orientation: portrait) and (min-aspect-ratio: 3/4) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .notion-header__title {
     display: none;
   }
@@ -231,7 +231,7 @@ h1 {
   height: 100% !important;
 }
 
-@media (max-width: 1024px) and (orientation: portrait) and (min-aspect-ratio: 3/4) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .notion-page__properties-layout {
     margin: 0 !important;
     padding: 0 !important;
