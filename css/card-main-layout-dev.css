@@ -1,6 +1,9 @@
 .notion-root {
   max-width: 720px!important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
+
 .super-root {
   overflow: hidden!important;
 }
@@ -9,6 +12,14 @@
   padding: 120px !important;
   position: relative; 
   z-index: 10;
+}
+
+.super-footer,
+.super-navbar,
+.super-content {
+  margin-left: 50vw !important;
+  width: 50vw !important;
+  position: static !important;
 }
 
 @media (max-width: 1024px) and (orientation: portrait) and (min-aspect-ratio: 3/4) {
