@@ -35,6 +35,14 @@
 }
 
 @media (max-width: 1024px) and (orientation: portrait) and (min-aspect-ratio: 3/4) {
+    .super-footer,
+    .super-navbar,
+    .super-content {
+      margin-left: 0 !important; /* 기본값으로 재설정 */
+      width: 100% !important;
+      position: relative !important;
+    }
+  
     .super-navbar__content, .super-footer {
         padding: 10px;
     }
