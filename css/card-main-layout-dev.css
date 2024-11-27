@@ -74,12 +74,12 @@
     }
     
     .super-content, .notion-page {
-      width: 100% !important;
-      max-width: 100% !important;
-      margin: 0 auto;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    width: 100% !important;
+    max-width: 800px; /* 원하는 최대 너비 */
+    margin: 0 auto; /* 가로 중앙 정렬 */
+    padding: 0 20px; /* 좌우 여백 */
+    box-sizing: border-box;
+  }
 }
 
 .notion-header {
