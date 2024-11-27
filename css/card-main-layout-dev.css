@@ -27,6 +27,21 @@
   }
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  .super-footer,
+  .super-navbar,
+  .super-content {
+    margin-left: 50vw !important;
+    width: 50vw !important;
+    position: static !important;
+  }
+  
+  .notion-root {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
 @media (max-width: 1024px) and (orientation: portrait) {
     .super-content {
       padding: 20px !important;
