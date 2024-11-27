@@ -103,13 +103,21 @@ transform: rotate(360deg);
   }
 
   .center-label {
-    width: min(12vh, 32vw);
-    aspect-ratio: 1 / 1; /* 정원을 유지 */
+    width: min(12vh, 32vw); /* 동적 너비 */
+    aspect-ratio: 1 / 1; /* 정원 유지 */
   }
 
   .play-pause-btn {
-    width: min(10vh, 28vw);
-    aspect-ratio: 1 / 1; /* 정원을 유지 */
+    width: min(10vh, 28vw); /* 버튼의 동적 너비 */
+    aspect-ratio: 1 / 1; /* 버튼도 정원 유지 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* 추가적으로 정원을 강제 */
   }
-}
+
+  .play-pause-btn svg {
+    width: 60%; /* 아이콘 크기를 버튼 내부에 적절히 배치 */
+    height: auto;
+  }
 }
