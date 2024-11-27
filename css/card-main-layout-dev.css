@@ -59,23 +59,26 @@
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
-    .super-content {
-      padding: 20px !important;
-      position: relative; 
-      z-index: 10;
-    }
-  
-    /* 최상위 부모 요소의 크기 강제 확장 */
-    body, html, .notion-root {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    
-    .super-content, .notion-page {
-    width: 100% !important;
-    max-width: 800px; /* 원하는 최대 너비 */
+  /* 최상위 요소 초기화 */
+  body, html, .notion-root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+  }
+
+  /* 콘텐츠 영역 */
+  .super-content {
+    padding: 20px !important;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* 주요 레이아웃 영역 */
+  .super-content, .notion-page {
+    width: calc(100% - 40px); /* 좌우 여백을 제외한 너비 */
+    max-width: 800px; /* 최대 너비 제한 */
     margin: 0 auto; /* 가로 중앙 정렬 */
     padding: 0 20px; /* 좌우 여백 */
     box-sizing: border-box;
