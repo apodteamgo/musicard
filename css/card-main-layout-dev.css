@@ -11,7 +11,7 @@
   z-index: 10;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
     .super-navbar__content, .super-footer {
         padding: 10px;
     }
@@ -76,7 +76,7 @@
   z-index: inherit;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
   .notion-header__title {
     display: none;
   }
@@ -261,7 +261,7 @@ h1 {
   height: 100% !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
   .notion-page__properties-layout {
     margin: 0 !important;
     padding: 0 !important;
@@ -334,40 +334,4 @@ h1 {
 
   /* 기타 PC 레이아웃 관련 스타일 추가 */
 }
-
-/* 세로 화면(portrait) 처리: 패드/탭 세로화면에서 모바일 세로형 레이아웃 적용 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .notion-header {
-    position: static !important;
-    height: auto !important;
-    width: 100% !important;
-    top: 0 !important;
-    margin-bottom: 20px;
-    z-index: 10;
-  }
-
-  .notion-collection-gallery {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-
-  .notion-collection-card {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    height: 80px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-  }
 }
