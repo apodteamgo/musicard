@@ -107,9 +107,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 25vh; /* 화면 높이의 1/4 설정 */
+    max-height: none; /* 기존의 높이 제한 제거 */
     z-index: 0;
-    max-height: 200px !important;
     object-fit: cover;
   }
   
