@@ -98,7 +98,7 @@
     width: 100% !important;
     top: 0 !important;
     margin-bottom: 20px;
-    z-index: 20;
+    z-index: 10;
   }
 
   .notion-header__cover {
@@ -257,9 +257,6 @@ h1 {
   .notion-page__properties-layout {
     margin: 0 !important;
     padding: 0 !important;
-    justify-content: center !important;
-    align-items: center !important;
-    z-index: 10;
   }
 
   .notion-collection-gallery {
