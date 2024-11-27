@@ -40,6 +40,22 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
+  /* 최상위 부모 요소의 크기 강제 확장 */
+  body, html, .notion-root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .super-content, .notion-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
