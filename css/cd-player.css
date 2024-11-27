@@ -1,17 +1,16 @@
 .cd-display {
-position: relative;
-width: min(30vh, 70vw);
-height: min(30vh, 70vw); /* 높이 동기화 */
-max-width: 250px; /* 최대 크기 설정 */
-aspect-ratio: 1 / 1;
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-background-color: #000;
-border-radius: 50%;
-overflow: hidden;
-margin: 10 auto; /* 중앙 정렬 */
+  position: relative;
+  width: min(30vh, 70vw); /* 크기를 동적으로 조정 */
+  max-width: 250px; /* 최대 크기 제한 */
+  aspect-ratio: 1 / 1; /* 가로:세로 비율을 1:1로 유지 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: #000;
+  border-radius: 50%; /* 원형 유지 */
+  overflow: hidden;
+  margin: 10 auto; /* 수평 중앙 정렬 */
 }
 
 .progress-ring {
