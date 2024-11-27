@@ -14,14 +14,12 @@
   z-index: 10;
 }
 
-@media (min-width: 1025px) {
-  .super-footer,
-  .super-navbar,
-  .super-content {
-    margin-left: 50vw !important;
-    width: 50vw !important;
-    position: static !important;
-  }
+.super-footer,
+.super-navbar,
+.super-content {
+  margin-left: 50vw !important;
+  width: 50vw !important;
+  position: static !important;
 }
 
 @media (max-width: 1024px) and (orientation: portrait) and (min-aspect-ratio: 3/4) {
