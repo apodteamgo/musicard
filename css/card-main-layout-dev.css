@@ -14,7 +14,17 @@
   z-index: 10;
 }
 
-@media (min-width: 1025px), (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 1025px) {
+  .super-footer,
+  .super-navbar,
+  .super-content {
+    margin-left: 50vw !important;
+    width: 50vw !important;
+    position: static !important;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
   .super-footer,
   .super-navbar,
   .super-content {
