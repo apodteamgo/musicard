@@ -346,4 +346,28 @@ h1 {
     padding: 0 !important;
     box-sizing: border-box !important;
   }
+
+  .notion-property.notion-property__file {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto !important; /* 높이를 자동 조정 */
+    min-height: 400px !important; /* 충분한 높이 확보 */
+    overflow: visible !important; /* 부모의 제한 해제 */
+  }
+
+  .notion-property.notion-property__file img {
+    position: relative;
+    display: block;
+    width: 100% !important; /* 너비 강제 */
+    height: auto !important; /* 세로 비율 유지 강제 */
+    object-fit: contain !important; /* 비율 유지하며 표시 */
+  }
+
+  .notion-property.notion-property__file a {
+    display: block;
+    text-align: center;
+    width: 100% !important;
+    height: auto !important;
+  }
 }
