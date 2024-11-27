@@ -24,16 +24,6 @@
   }
 }
 
-@media (max-width: 1024px) and (orientation: landscape) and (device-aspect-ratio: 16/9) {
-  .super-footer,
-  .super-navbar,
-  .super-content {
-    margin-left: 50vw;
-    width: 50vw;
-    position: static;
-  }
-}
-
 @media (max-width: 1024px) and (orientation: portrait) and (min-aspect-ratio: 3/4) {
     .super-navbar__content, .super-footer {
         padding: 10px;
