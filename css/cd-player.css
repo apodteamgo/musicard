@@ -1,7 +1,7 @@
 .cd-display {
 position: relative;
-width: min(20vh, 60vw);
-height: min(20vh, 60vw); /* 높이 동기화 */
+width: min(30vh, 70vw);
+height: min(30vh, 70vw); /* 높이 동기화 */
 max-width: 250px; /* 최대 크기 설정 */
 aspect-ratio: 1 / 1;
 display: flex;
