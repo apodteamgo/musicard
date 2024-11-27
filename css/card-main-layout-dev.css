@@ -28,9 +28,9 @@
   .super-footer,
   .super-navbar,
   .super-content {
-    margin-left: 50vw !important;
-    width: 50vw !important;
-    position: static !important;
+    margin-left: 50vw;
+    width: 50vw;
+    position: static;
   }
 }
 
