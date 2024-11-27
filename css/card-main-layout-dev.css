@@ -28,6 +28,12 @@
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
+    .super-content {
+      padding: 20px !important;
+      position: relative; 
+      z-index: 10;
+    }
+  
     .super-navbar__content, .super-footer {
         padding: 10px;
     }
