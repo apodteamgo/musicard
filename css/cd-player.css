@@ -95,8 +95,8 @@ transform: rotate(360deg);
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .cd-display {
-    width: min(30vh, 80vw); /* CD의 동적 너비 */
-    height: min(30vh, 80vw); /* CD의 높이 동기화 */
+    width: min(20vh, 60vw);
+    height: min(20vh, 60vw); /* 높이 동기화 */
     aspect-ratio: 1 / 1; /* 추가적인 정원 보장 */
     border-radius: 50%; /* 정원을 강제 유지 */
     margin: 50px auto 0 auto;
@@ -104,8 +104,8 @@ transform: rotate(360deg);
   }
 
   .center-label {
-    width: min(12vh, 32vw);
-    height: min(12vh, 32vw); /* 높이를 동기화 */
+    width: min(8vh, 20vw); /* 버튼 크기 축소 */
+    height: min(8vh, 20vw); /* 높이를 동기화 */
     border-radius: 50%; /* 정원을 강제 유지 */
   }
 
@@ -119,7 +119,7 @@ transform: rotate(360deg);
   }
 
   .play-pause-btn svg {
-    width: 60%; /* 아이콘 크기 */
-    height: 60%; /* 아이콘 높이 동기화 */
+    width: 50%; /* 아이콘 크기 축소 */
+    height: 50%;
   }
 }
