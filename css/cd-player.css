@@ -96,20 +96,20 @@ transform: rotate(360deg);
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .cd-display {
-    width: min(30vh, 80vw); /* 화면 높이의 30%와 너비의 80% 중 작은 값 사용 */
-    height: min(30vh, 80vw);
+    width: min(30vh, 80vw); /* 화면 높이의 30%와 너비의 80% 중 작은 값 */
+    aspect-ratio: 1 / 1; /* 가로:세로 비율을 1:1로 유지 */
     margin: 50px auto 0 auto;
     z-index: 20;
   }
 
   .center-label {
-    width: min(12vh, 32vw); /* 제한된 크기로 조정 */
-    height: min(12vh, 32vw);
+    width: min(12vh, 32vw);
+    aspect-ratio: 1 / 1; /* 정원을 유지 */
   }
 
   .play-pause-btn {
     width: min(10vh, 28vw);
-    height: min(10vh, 28vw);
+    aspect-ratio: 1 / 1; /* 정원을 유지 */
   }
 }
 }
