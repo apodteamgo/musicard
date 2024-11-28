@@ -174,21 +174,6 @@
     width: 100% !important;
     height: auto !important;
   }
-  
-  h1 {
-    text-align: center;
-    font-size: 25px !important;
-    font-weight: 500 !important; /* 헤딩은 굵게 */
-    z-index: 10; 
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); /* 가독성을 위한 그림자 */
-  }
-    
-  h2, h3, h4, h5, h6 {
-    text-align: center;
-    font-size: 21px !important;
-    font-weight: 500 !important; /* 헤딩은 굵게 */
-    z-index: 10; 
-  }
 }
 
 .notion-header__cover::after {
