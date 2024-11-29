@@ -316,6 +316,21 @@ h1 {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
+
+    position: relative; /* img 요소 배치를 위한 기준 */
+    overflow: hidden; /* 부모 범위를 넘어가는 이미지를 숨김 */
+  }
+
+    .notion-collection-card__cover img {
+    width: 60%; /* 전체 크기를 줄임 */
+    height: auto; /* 비율을 유지 */
+    position: absolute; /* 절대 배치 */
+    right: 0; /* 오른쪽 배치 */
+    top: 50%; /* 세로 중앙 정렬 */
+    transform: translateY(-50%); /* 세로 중앙 정렬 보정 */
+
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Safari 지원 */
   }
 
   .notion-collection-card.gallery .notion-property__title {
