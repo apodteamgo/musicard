@@ -52,6 +52,8 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady() {
   setThumbnail();
   cdBackground.style.animationPlayState = "paused"; // 초기 상태는 멈춤
+  playIcon.style.display = "block";
+  pauseIcon.style.display = "none";
 }
 
 function onPlayerStateChange(event) {
@@ -84,3 +86,6 @@ playPauseBtn.addEventListener("click", function () {
 
 // API 로드 시작
 loadYouTubeAPI();
+
+// 초기 로드 시 CD 애니메이션 상태 설정
+cdBackground.style.animationPlayState = "paused"; // 초기 애니메이션 멈춤
