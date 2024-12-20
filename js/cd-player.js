@@ -4,7 +4,7 @@ const playPauseBtn = document.getElementById("playPauseBtn");
 const playIcon = document.getElementById("playIcon");
 const pauseIcon = document.getElementById("pauseIcon");
 const progressRing = document.querySelector(".progress-ring");
-let isPlaying = true;
+let isPlaying = false; // 초기 상태는 멈춤
 
 // YouTube API 스크립트 로드
 function loadYouTubeAPI() {
@@ -15,7 +15,6 @@ function loadYouTubeAPI() {
     const firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   } else if (typeof YT !== "undefined" && YT && typeof YT.Player === "function") {
-    // API가 이미 로드되었을 경우, 바로 초기화 함수 호출
     onYouTubeIframeAPIReady();
   }
 }
@@ -37,7 +36,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('youtube-player', {
     videoId: videoId,
     playerVars: {
-      'autoplay': 0,
+      'autoplay': 0, // 자동 재생 비활성화
       'controls': 0,
       'loop': 1,
       'playlist': videoId,
@@ -50,34 +49,35 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-function onPlayerReady(event) {
-  event.target.playVideo();
+function onPlayerReady() {
   setThumbnail();
-  cdBackground.style.animationPlayState = "running";
-  setInterval(updateProgressRing, 1000); // 1초마다 진행 바 업데이트
+  cdBackground.style.animationPlayState = "paused"; // 초기 상태는 멈춤
 }
 
 function onPlayerStateChange(event) {
   if (event.data === YT.PlayerState.PLAYING) {
     playIcon.style.display = "none";
     pauseIcon.style.display = "block";
+    cdBackground.style.animationPlayState = "running";
   } else if (event.data === YT.PlayerState.PAUSED) {
     playIcon.style.display = "block";
     pauseIcon.style.display = "none";
+    cdBackground.style.animationPlayState = "paused";
   }
 }
 
 playPauseBtn.addEventListener("click", function () {
+  if (!player) {
+    console.warn("Player is not initialized yet.");
+    return;
+  }
+
   if (isPlaying) {
     player.pauseVideo();
     cdBackground.style.animationPlayState = "paused";
-    playIcon.style.display = "block";
-    pauseIcon.style.display = "none";
   } else {
     player.playVideo();
     cdBackground.style.animationPlayState = "running";
-    playIcon.style.display = "none";
-    pauseIcon.style.display = "block";
   }
   isPlaying = !isPlaying;
 });
