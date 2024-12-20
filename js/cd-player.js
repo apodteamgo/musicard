@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const videoId = window.videoId
   let player = null;
   let isPlaying = false;
   let isInitialized = false;
